@@ -1,0 +1,254 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    text-align: center;
+    color: beige;
+    box-sizing: border-box;
+}
+.navegacion1 {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(43, 43, 43);
+    overflow: hidden;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+}
+
+.navegacion1 li a {
+    display: block;
+    text-decoration: none;
+    color: beige;
+    margin: 16px 5px;
+}
+
+.titulonav {
+    font-size: 23px;
+    font-weight: 500;
+    padding: 0px 20px;
+}
+
+.navegacion1 li a:hover(.activo) {
+    text-decoration: underline;
+}
+
+.activo {
+    text-decoration: underline;
+}
+
+.imagenidioma {
+    width: 45%;
+    filter: invert(100%);
+}
+
+.imagentienda {
+    width: 45%;
+    filter: invert(100%);
+}
+
+.imagenayuda {
+    width: 45%;
+    filter: invert(100%);
+
+}
+
+.fondo2{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    padding: 64px 32px;
+}
+.articulos{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+.articulos article{
+    cursor: pointer;
+    display: block;
+    transition: all 0,4s ease-in-out;
+    overflow: hidden;
+    border-radius: 16px;
+}
+.articulos article a{
+    display: inline-flex;
+    color: gray;
+    text-decoration: none;
+}
+.articulos article h2{
+    margin: 0 0 20px 0px;
+    font-size: 1.6rem;
+    color: beige;
+    transition: color 0.3s ease-out;
+}
+.articulos article .imageen{
+    transform-origin: center;
+    transition: color 0.3s ease-out;
+}
+.articulo-avanzado{
+    padding: 24px;
+    background: black;
+    display: none;
+}
+.articulos figure{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+.articulos figure .imageen{
+    height: 100%;
+    justify-content: center;
+    overflow: hidden;
+
+}
+.articulos article:hover .articulo-avanzado{
+    display: block;
+}
+.imagen{
+    position: relative;
+    left: 0;
+    width: 250px;
+    background-color: black;
+    border-radius: 5px;
+    transition: 1s ease-in-out;
+    overflow: hidden;
+    box-shadow: 0 2px 5px black;
+    margin-top: 50px;
+}
+
+.imagen:not(:first-child){
+    margin-left: -45px;
+}
+
+.imagen:hover{
+    transform: translateY(-16px);
+    font-weight: bold;
+    cursor: pointer;
+}
+.imagen:hover ~ .imagen{
+    left: 55px;
+}
+.imagen img{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+
+*{
+    box-sizing: border-box;
+}
+footer{
+    padding: 16px;
+    position: static;
+    bottom: 0px;
+    background-color: black;
+    color: white;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+}
+
+.envuelto{
+    display: flex;
+    background-color: black;
+    flex-direction: column;
+}
+.columnas ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+.columnas ul a{
+    color: white;
+    text-decoration: none;
+}
+.columnas ul a:hover{
+    text-decoration: underline;
+}
+.columnas ul li{ 
+    margin-bottom: 16px;
+}
+.logo{
+    width: 40px;
+}
+
+.redesociales{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.redesociales img{
+    width: 24px;
+    height: 24px;
+    transition: all 0.2s ease-in-out;
+}
+.redesociales img:hover{
+    transform: scale(1.1);
+}
+.piearriba{
+    display: flex;
+    max-width: 800px;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 8px 0px;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+}
+
+.columnas{
+    padding-top: 24px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+.columnas{
+    color: white;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 1.125rem;
+}
+
+
+.pieabajo{
+    text-align: center;
+    border-top: 1px solid gray;
+    margin-top: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 8px;
+    padding: 16px 0px;
+    flex-wrap: wrap;
+}
+.pieabajoenlaces{
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+@media (max-width:800px){
+    .pieabajoenlaces{
+        margin: 0 auto;
+    }
+}
+.pieabajoenlaces > a{
+    color: white;
+    text-decoration: none;
+}
+.pieabajoenlaces > a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
